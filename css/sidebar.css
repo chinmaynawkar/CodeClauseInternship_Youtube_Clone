@@ -1,0 +1,250 @@
+.sidebar p{
+    margin-left: 25px;
+    font-size: 14px;
+}
+
+h3{
+    margin: 0px 0px 6px 20px;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(92, 91, 91);
+}
+
+.first-item-list{
+    height: 173px; 
+}
+
+.second-item-list{
+    height: 250px;  
+}
+
+.third-item-list{
+    height: 118px;
+}
+
+.fourth-item-list{
+    height: 118px;
+}
+
+.fifth-item-list{
+    height: 236px;
+}
+
+.sixth-item-list{
+    height: 170px;  
+}
+
+#home-icon, #explore-icon,#subscription-icon, #library-icon,
+#history-icon, #videos-icon, #watch-later-icon, #most-watched-icon,
+#show-more-icon, #vidIQ-logo, #browse-icon, #gaming-icon, #sports-icon
+{
+    height: 25px;
+}
+
+#settings-icon, #report-icon, #help-icon, #feedback-icon{
+    height: 20px;
+}
+
+#shorts-icon{
+    height: 35px;
+}
+
+#youtube-kids-icon{
+    height: 30px;
+}
+
+#youtube-icon, #creator-studio-icon, #youtube-music-icon,
+#youtube-tv-icon{
+    height: 23px;
+}
+
+.first-item-list, .second-item-list, .third-item-list,
+.fifth-item-list, .fourth-item-list, .sixth-item-list {
+    border-bottom: 1px solid rgb(228, 228, 228);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.second-item-list, .third-item-list, .fourth-item-list,
+.fifth-item-list, .sixth-item-list{
+    padding-top: 12px;
+}
+
+.first-item-list div, .second-item-list div, .third-item-list div,
+.fourth-item-list div, .fifth-item-list div, .sixth-item-list div{
+    height: 40px;
+    width: 92%;
+    margin-bottom: 0px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+.fifth-item-list div, .sixth-item-list div{
+    padding-left: 22px;
+    width: 91%;
+}
+
+.first-item-list div:nth-child(3){
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.first-item-list div:nth-child(3) p{
+    margin-left: 13px;
+}
+
+.fifth-item-list div:nth-child(5){
+    padding-left: 18px;
+    padding-right: 4px;
+}
+
+.fifth-item-list div:nth-child(6){
+    padding-left: 15px;
+    padding-right: 4px
+}
+
+.fifth-item-list div:nth-child(3) p{
+    margin-left: 28px;
+}
+
+.fifth-item-list div:nth-child(5) p{
+    margin-left: 22px;
+}
+
+.fifth-item-list div:nth-child(6) p{
+    margin-left: 20px;
+}
+
+.sidebar-footer{
+    height: 160px;
+    padding-top: 11px;  
+}
+
+.sidebar-footer div{
+    height: 60px;  
+    padding: 2px 0px;
+    margin-bottom: 5px;
+}
+
+.sidebar-footer p{
+    color: rgb(101, 99, 99);
+    font-weight: 500;
+    font-size: 13px;
+    margin: 2px 0px 0px 22px;
+    word-spacing: 5px;
+    line-height: 16px;
+}
+
+.sidebar-footer div:nth-child(3){
+    height: 25px;
+    font-weight: 300;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin-top: -5px;
+    padding-left: 20px;
+}
+
+.copyright-info span{
+    margin-left: 5px;
+    color: rgb(163, 163, 163);
+    font-weight: 500;
+}
+
+#copyright{
+    height: 10px;
+}
+
+.first-item-list div:nth-child(-n+4):hover,
+.second-item-list div:nth-child(-n+6):hover,
+.third-item-list div:nth-child(-n+3):nth-child(n+2):hover,
+.fourth-item-list div:nth-child(-n+3):nth-child(n+2):hover,
+.fifth-item-list div:nth-child(-n+6):nth-child(n+2):hover,
+.sixth-item-list div:nth-child(-n+4):hover{
+    background-color: rgb(230, 230, 230);
+}
+
+@media only screen and (min-width: 1297px) {
+    .sidebar{
+        background-color:white;
+        height: 94%;
+        width: 240px;
+        position: fixed;
+        top:40px;
+        margin-top: -2px;
+        margin-left: -270px;
+        padding-top: 20px;
+        padding-right: 10px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        font-weight: 300;
+        z-index: 100;
+    
+    }
+}
+
+@media (min-width: 776px) and (max-width: 1296px)
+{
+  
+    .sidebar{
+        background-color: white;
+        height: 96%;
+        width: 70px;
+        margin-top: 0px;
+        margin-left: -270px;
+        position: fixed;
+        top:40px;
+        font-weight: 300;
+        z-index: 100;
+    }
+
+    .sidebar p{
+        font-size: 10px;
+        margin: 8px 0px 0px 0px;
+    }
+
+    .second-item-list, .third-item-list,
+    .fourth-item-list, .fifth-item-list, .sixth-item-list,
+    .sidebar-footer{
+        display: none;
+    }
+
+    .first-item-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:baseline;
+        height: 320px;
+        border: none;
+    }
+
+    .first-item-list div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        height: 80px;
+        width: 70px;
+        margin: 0;
+        font-size: 8px;
+    }
+    .first-item-list div:nth-child(3){
+        padding: 0;
+    }
+
+    .first-item-list div:nth-child(3) p{
+        margin-left: 0;
+    }
+    
+}
+
+@media (max-width: 775px)
+{   
+    .sidebar{
+        display: none;
+    }
+    
+}

@@ -1,0 +1,128 @@
+.video-preview
+{   
+    background-color: white;
+    max-height: 285px;
+    max-width: 332px;
+    border-radius: 15px;
+}
+
+.thumbnail{
+    width: 100%;
+    height: 64%;
+    position: relative;
+}
+
+.video-time{
+    position: absolute;
+    font-size: 0.8rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 4px;
+    padding: 2px;
+    top: 85%;
+    right: 3%;
+}
+
+.video-thumbnail{
+    border-radius: 15px;
+    height: 100%;
+}
+
+.video-info{
+    display: flex;
+    height: 36%;
+}
+
+.channel-logo-section{
+    width: 15%;
+    padding-top: 10px;
+}
+
+.channel-logo{
+    width: 36px; 
+    border-radius: 18px;
+}
+
+.video-title-stats{
+    width: 85%;
+    background-color: white;
+    padding-right: 24px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom-right-radius: 15px;
+}
+
+.video-thumbnail{
+    width: 100%;
+    min-height: 138px; 
+}
+
+.video-title{
+    font-weight: 500;
+    font-size: 15px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    padding-top: 8px;
+    max-height: 34px;
+    overflow-y: hidden;
+    
+}
+
+.channel-name, .views{
+    font-weight: 400;
+    font-size: 12px;
+    color: gray;
+    line-height: 18px;
+}
+
+@media (min-width: 1144px)
+{
+    .videos-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 30px;
+        margin-right: -10px;
+    }
+
+}
+@media (min-width: 574px) and (max-width: 775px)
+{
+    .videos-list{
+        margin-left: -255px;
+    }
+
+}
+
+@media (min-width: 777px) and (max-width: 1295px)
+{
+    .videos-list{
+        margin-left: -180px;
+    }
+
+}
+
+@media (min-width: 574px) and (max-width: 887px)
+{
+    .videos-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 30px;
+        margin-right: -10px;
+    }
+
+}
+
+@media (min-width: 888px) and (max-width: 1143px)
+{
+    .videos-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 30px;
+        margin-right: -10px;
+    }
+}
